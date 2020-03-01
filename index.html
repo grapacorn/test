@@ -8,23 +8,60 @@
     .button {
       background-color: #deba5f;
       color: white;
-      font-size: 2em;
+      font-size: 30px;
       text-align: center;
       display: inline-block;
-      width: 8em;
-      height: 4em;
-      margin: 10px;
+      width: 80%;
+      height: 80%;
+      margin: 10%;
     }
 
     #grid {
-      width:550px;
-      border: 1px solid black;
+      width: 550px;
+      height: 500px;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-      align-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
     }
 
+    body {
+      padding: 50px;
+    }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+      border: solid 1px blue;
+    }
+    .grid > div{ /* grid 내부에 있는 div 선택( 자식선택자)*/
+      background-color: gray;
+      color:white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    #bu1 {
+      grid-column: 2/4;
+      grid-row: 1;
+    }
+
+    #bu2 {
+      grid-column: 4/6;
+      grid-row: 1;
+    }
+
+    #bu3 {
+      grid-column: 2/4;
+      grid-row: 2;
+    }
+
+    #bu4 {
+      grid-column: 4/6;
+      grid-row: 2;
+    }
   </style>
 
 
@@ -33,10 +70,19 @@
 <body>
   <div id="grid">
     <input type="button" class="button" value="대구점">
-    <input type="button" class="button" value="동대구점">
-    <input type="button" class="button" value="재료구매">
+    <input type="button" class="button" value="동대구점"> <input type="button" class="button" value="재료구매">
     <input type="button" class="button" value="etc.">
   </div>
+
+
+  <div class="grid">
+    <div id="bu1">대구점</div>
+    <div id="bu2">동대구점</div>
+    <div id="bu3">재료구매</div>
+    <div id="bu4">etc.</div>
+
+  </div>
+
 
 
 
