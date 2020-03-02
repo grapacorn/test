@@ -12,13 +12,14 @@
       color: white;
       font-size: 30px;
       text-align: center;
-      padding-top: 30px;
+      padding-top: 35px;
 
     }
 
     #bu1 {
       grid-column: 2/4;
       grid-row: 1;
+
     }
 
     #bu2 {
@@ -40,4 +41,11 @@
       font-family: Heebo,sans-serif;
       font-size: 20px;
       text-align: center;
+    }
+    h1{
+      font-size: 5em;
+    }
+    a{
+      color:white;
+      text-decoration: none;
     }
