@@ -1,53 +1,49 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: 10px;
-      grid-auto-rows: minmax(100px, auto);
-    }
+.grid>button {
+  /* grid 내부에 있는 div 선택( 자식선택자)*/
+  background-color: gray;
+  color: white;
+  font-size: 50px;
+  }
 
-    .grid>button {
-      /* grid 내부에 있는 div 선택( 자식선택자)*/
-      background-color: gray;
-      color: white;
-      font-size: 50px;
-      text-align: center;
-      padding-top: 20%;
-      padding-bottom: 20%;
+#bu1 {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
 
-    }
+#bu2 {
+  grid-column: 4/6;
+  grid-row: 1/3;
+}
 
-    #bu1 {
-      grid-column: 2/4;
-      grid-row: 1/3;
+#bu3 {
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
 
-    }
+#bu4 {
+  grid-column: 4/6;
+  grid-row: 3/5;
+}
 
-    #bu2 {
-      grid-column: 4/6;
-      grid-row: 1/3;
-    }
+body {
+  font-family: Heebo, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
 
-    #bu3 {
-      grid-column: 2/4;
-      grid-row: 3/5;
-    }
+h1 {
+  font-size: 5em;
+  color: gray;
+}
 
-    #bu4 {
-      grid-column: 4/6;
-      grid-row: 3/5;
-    }
-
-    body{
-      font-family: Heebo,sans-serif;
-      font-size: 20px;
-      text-align: center;
-    }
-    h1{
-      font-size: 5em;
-      color: gray;
-    }
-    a{
-      color:red;
-      text-decoration: none;
-    }
+a {
+  color: black;
+  text-decoration: none;
+}
