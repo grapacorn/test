@@ -6,13 +6,14 @@
       grid-auto-rows: minmax(100px, auto);
     }
 
-    .grid>div {
+    .grid>button {
       /* grid 내부에 있는 div 선택( 자식선택자)*/
       background-color: gray;
       color: white;
       font-size: 50px;
       text-align: center;
-      padding-top: 80px; 
+      padding-top: 20%;
+      padding-bottom: 20%;
 
     }
 
@@ -44,8 +45,9 @@
     }
     h1{
       font-size: 5em;
+      color: gray;
     }
     a{
-      color:white;
+      color:red;
       text-decoration: none;
     }
